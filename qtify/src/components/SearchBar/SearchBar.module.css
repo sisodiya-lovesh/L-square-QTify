@@ -1,0 +1,30 @@
+@import '../../styles/variables.css';
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid var(--primary-black);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  width: 500px;
+}
+
+.input {
+  flex-grow: 1;
+  border: none;
+  padding: 10px;
+  height: 100%;
+}
+
+.button {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  cursor: pointer;
+  height: 38px;
+}
+

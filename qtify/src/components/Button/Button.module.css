@@ -1,0 +1,15 @@
+@import '../../styles/variables.css';
+
+.button {
+  background-color: var(--primary-black);
+  color: var(--primary-green);
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
