@@ -1,9 +1,10 @@
 import { React , useEffect, useState }from 'react';
 import Navbar from './components/Navbar/Navbar';
-import './styles/variables.css';
+import styles from './styles/variables.css';
 import HeroSection from './components/HeroSection/HeroSection';
 import { fetchGenreList, fetchNewAlbums, fetchSongs, fetchTopAlbums } from './api/api';
 import Section from './components/Section/Section';
+import GenreSection from './components/GenreSection/GenreSection';
 
 const App = () => {
   const [topAlbums, setTopAlbums] = useState([]);
@@ -31,6 +32,10 @@ const App = () => {
       </div>
       <div style={{marginBottom: '30px'}}>
         <Section data={newAlbums} title="New Albums" />
+      </div>
+      <hr className={styles.divider} />
+      <div>
+        <GenreSection data={songs} title="Songs" genreList={genreList} />
       </div>
     </div>
   );

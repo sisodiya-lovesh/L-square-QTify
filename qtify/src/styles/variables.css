@@ -2,4 +2,7 @@
     --primary-green: #34C94B;
     --primary-black: #121212;
   }
-  
+  .divider {
+    border: 1px solid var(--color-primary);
+    margin-block: 30px;
+}
